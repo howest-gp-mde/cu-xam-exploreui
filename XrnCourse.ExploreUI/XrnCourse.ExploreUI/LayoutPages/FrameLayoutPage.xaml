@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XrnCourse.ExploreUI.LayoutPages.FrameLayoutPage"
+             Title="Frames Example" Padding="20"
+             Style="{StaticResource ContentPageStyle}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Frames are used to wrap a view with a border. This border can be configured with color, shadows and other options."
+                    VerticalOptions="Start" 
+                    HorizontalOptions="StartAndExpand" />
+
+                <Label Text="Simple frame with shadow" FontSize="Large" Margin="0, 20, 0, 0" HorizontalOptions="Center" />
+                <Frame HasShadow="True" Margin="5,0,5,0">
+                    <Label Text="I'm a framed label!" />
+                </Frame>
+
+                <Label Text="Frames with rounded corners" FontSize="Large" Margin="0, 20, 0, 0" HorizontalOptions="Center" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Frame HorizontalOptions="Center" 
+                           WidthRequest="50" HeightRequest="50" CornerRadius="50" 
+                           IsClippedToBounds="True" BackgroundColor="#B3000D">
+                        <Label Text="Red Pill" FontSize="Large" TextColor="White"
+                               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Frame>
+                    <Frame HorizontalOptions="Center" 
+                           WidthRequest="50" HeightRequest="50" CornerRadius="50" 
+                           IsClippedToBounds="True" BackgroundColor="#8094FF">
+                        <Label Text="Blue Pill" FontSize="Large" TextColor="White"
+                               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Frame>
+                    <Frame HorizontalOptions="Center" 
+                           WidthRequest="50" HeightRequest="50" CornerRadius="50" 
+                           IsClippedToBounds="True">
+                        <Label Text="No Pill" FontSize="Large"
+                               HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                               HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Frame>
+                </StackLayout>
+
+                <Label Text="Frame simulating a card" FontSize="Large" Margin="0, 20, 0, 0" HorizontalOptions="Center" />
+                <Frame BorderColor="LightGray" CornerRadius="5" Padding="10" Margin="5,0,5,0">
+                    <StackLayout>
+                        <Label Text="Card Example" FontSize="Medium" FontAttributes="Bold" /> 
+                        <BoxView Color="LightGray" HeightRequest="2" HorizontalOptions="Fill" />
+                        <Label Text="Frames can wrap other layouts suchs as StackLayouts to create complex UI's, such as this card!"/>
+                        <Button Text="This button does nothing" HorizontalOptions="Start"/>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace XrnCourse.ExploreUI
 {
@@ -8,8 +6,8 @@ namespace XrnCourse.ExploreUI
     {
         public App()
         {
+            AdMaiora.RealXaml.Client.AppManager.Init(this);
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 

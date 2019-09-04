@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XrnCourse.ExploreUI.LayoutPages.RelativeLayoutPage"
+             Title="Relative Layout Example"
+             Style="{StaticResource ContentPageStyle}">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <BoxView Color="Gray" HeightRequest="50" WidthRequest="50" x:Name="boxTop"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=X, Factor=1, Constant=25}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=10}"/>
+            <Label  Text="For performance considerations, usage of RelativeLayout is not recommended!"
+                    BackgroundColor="Firebrick" TextColor="White"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxTop, Property=Y, Factor=1, Constant=40}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=boxTop, Property=X, Factor=1, Constant=25}"
+                    />
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

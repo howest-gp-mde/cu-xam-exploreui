@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XrnCourse.ExploreUI.LayoutPages.AbsoluteLayoutPage"
+             Title="Absolute Layout Example"
+             Style="{StaticResource ContentPageStyle}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"></Setter>
+                <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Label Text="Note how this element is being overlapped by siblings defined later in the layout."
+                   HorizontalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds="20, 0.75, 0.33, 0.33" 
+                   AbsoluteLayout.LayoutFlags="SizeProportional,YProportional">
+            </Label>
+
+            <Label FontSize="36"
+                   HorizontalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds=".5, .25, 1, 0.5" 
+                   AbsoluteLayout.LayoutFlags="All">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Sacramento" />
+                        <On Platform="Android" Value="Sacramento-Regular.ttf#Sacramento" />
+                        <On Platform="UWP" Value="Assets/Fonts/Sacramento-Regular.ttf#Sacramento" />
+                    </OnPlatform>
+                </Label.FontFamily>
+                <Label.Text>
+The traveling adventures 
+of the little pink box
+                </Label.Text>
+            </Label>
+
+            <BoxView x:Name="boxPlayer" Color="Pink"
+                     AbsoluteLayout.LayoutBounds=".5, .5, 50, 50"
+                     AbsoluteLayout.LayoutFlags="PositionProportional"></BoxView>
+            <Button Text="&#9664;" Clicked="BtnLeft_Click"
+                    AbsoluteLayout.LayoutBounds="0, .5, 50, 100" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <Button Text="&#9650;" Clicked="BtnTop_Click"
+                    AbsoluteLayout.LayoutBounds=".5, 0, 100, 50" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <Button Text="&#9654;" Clicked="BtnRight_Click"
+                    AbsoluteLayout.LayoutBounds="1, .5, 50, 100" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <Button Text="&#9660;" Clicked="BtnBottom_Click"
+                    AbsoluteLayout.LayoutBounds=".5, 1, 100, 50"
+                    AbsoluteLayout.LayoutFlags="PositionProportional" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

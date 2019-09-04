@@ -4,13 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="XrnCourse.ExploreUI.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+             x:Class="XrnCourse.ExploreUI.MainPage"
+             Style="{StaticResource PlatformPaddedContentPageStyle}">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" Spacing="10">
+            <Label Style="{DynamicResource CustomTitleStyle}">Explore UI</Label>
+            <Label Style="{DynamicResource CaptionStyle}" Text="...and learn kick-ass XAML along the way"></Label>
+            <Button Style="{StaticResource DefaultButtonStyle}" Text="Page Types" Clicked="BtnPageTypes_Clicked"></Button>
+            <Button Style="{StaticResource DefaultButtonStyle}" Text="Layouts" Clicked="BtnLayouts_Clicked"></Button>
+            <Button Style="{StaticResource DefaultButtonStyle}" Text="Views / Widgets" Clicked="BtnViews_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

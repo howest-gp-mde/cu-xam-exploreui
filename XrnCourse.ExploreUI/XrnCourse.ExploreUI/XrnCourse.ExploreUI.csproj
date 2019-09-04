@@ -10,7 +10,110 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AdMaiora.RealXaml.Client" Version="1.0.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="MasterDetailViews\ExampleDetailPage.xaml.cs">
+      <DependentUpon>ExampleDetailPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="LayoutPages\AbsoluteLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LayoutPages\FlexLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LayoutPages\FrameLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LayoutPages\GridLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LayoutPages\RelativeLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LayoutPages\StackLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LayoutTypesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailExamplePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailViews\ExampleMasterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailViews\ExampleDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageTypesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TabChildren\TabReferencedChildPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TabsExamplePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewTypePages\TextualViewsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewTypesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LayoutPages\AbsoluteLayoutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LayoutPages\GridLayoutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LayoutPages\RelativeLayoutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LayoutPages\StackLayoutPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LayoutTypesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MasterDetailExamplePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MasterDetailViews\ExampleDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MasterDetailViews\ExampleMasterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="PageTypesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="TabChildren\TabReferencedChildPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="TabsExamplePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ViewTypePages\TextualViewsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ViewTypesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 </Project>

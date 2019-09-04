@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace XrnCourse.ExploreUI
@@ -11,11 +7,28 @@ namespace XrnCourse.ExploreUI
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
+    [AdMaiora.RealXaml.Client.MainPage]
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
+            AdMaiora.RealXaml.Client.AppManager.Init(this);
             InitializeComponent();
+        }
+
+        private async void BtnPageTypes_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new PageTypesPage()));
+        }
+
+        private async void BtnLayouts_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new LayoutTypesPage()));
+        }
+
+        private async void BtnViews_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new ViewTypesPage()));
         }
     }
 }

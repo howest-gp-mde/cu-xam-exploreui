@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XrnCourse.ExploreUI.Android
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XrnCourse.ExploreUI.iOS", "XrnCourse.ExploreUI\XrnCourse.ExploreUI.iOS\XrnCourse.ExploreUI.iOS.csproj", "{2BE22FEE-A50E-4D74-AA44-60839984B9A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XrnCourse.ExploreUI", "XrnCourse.ExploreUI\XrnCourse.ExploreUI\XrnCourse.ExploreUI.csproj", "{D7B3805E-39C1-4A12-8089-E4CAC83B549B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XrnCourse.ExploreUI", "XrnCourse.ExploreUI\XrnCourse.ExploreUI\XrnCourse.ExploreUI.csproj", "{D7B3805E-39C1-4A12-8089-E4CAC83B549B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,9 +105,9 @@ Global
 		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|ARM.ActiveCfg = Debug|iPhoneSimulator
 		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|ARM.Build.0 = Debug|iPhoneSimulator
 		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|ARM.Deploy.0 = Debug|iPhoneSimulator
-		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhone.Build.0 = Debug|iPhone
-		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhone.ActiveCfg = Debug|iPhoneSimulator
+		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhone.Build.0 = Debug|iPhoneSimulator
+		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhone.Deploy.0 = Debug|iPhoneSimulator
 		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{2BE22FEE-A50E-4D74-AA44-60839984B9A8}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator

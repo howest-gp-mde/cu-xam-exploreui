@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XrnCourse.ExploreUI.ViewTypesPage"
+             Title="View Types"
+             Style="{StaticResource ContentPageStyle}">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" Spacing="10">
+            <Label Style="{DynamicResource CustomTitleStyle}">Explore View Types</Label>
+            <Label Style="{DynamicResource CaptionStyle}" Text="and learn to control the controls!"></Label>
+            <Button Style="{StaticResource DefaultButtonStyle}" Text="Textual Views" Clicked="BtnTextualView_Clicked"></Button>
+            <Button Style="{StaticResource CancelButtonStyle}" Text=" &#12298; Go Back " Clicked="BtnGoBack_Clicked">
+                <Button.Margin>
+                    <Thickness>
+                        <Thickness.Top>50</Thickness.Top> <!-- override Margin.Top of DefaultButtonStyle -->
+                    </Thickness>
+                </Button.Margin>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

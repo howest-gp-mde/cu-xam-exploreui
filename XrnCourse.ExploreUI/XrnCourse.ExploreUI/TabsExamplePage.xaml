@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:tabchildren="clr-namespace:XrnCourse.ExploreUI.TabChildren"
+             mc:Ignorable="d"
+             x:Class="XrnCourse.ExploreUI.TabsExamplePage"
+             Title="Tabs, three of 'em"
+             Style="{StaticResource TabbedPageStyle}">
+    
+    <!--Pages can be added as references or inline-->
+    <ContentPage Style="{StaticResource ContentPageStyle}" Title="Tab A">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Style="{DynamicResource CustomTitleStyle}" Text="Tab page A"></Label>
+                <Label Text="This page is inline" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Style="{StaticResource ContentPageStyle}" Title="Tab B">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Style="{DynamicResource CustomTitleStyle}" Text="Tab page B"></Label>
+                <Label Text="This page is also inline" />
+                <Button Style="{StaticResource DefaultButtonStyle}" Text="Go to first tab" Clicked="BtnFirstTab_Clicked"></Button>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <tabchildren:TabReferencedChildPage Title="Tab C" />
+</TabbedPage>
