@@ -7,12 +7,10 @@ namespace XrnCourse.ExploreUI
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
-    [AdMaiora.RealXaml.Client.MainPage]
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
-            AdMaiora.RealXaml.Client.AppManager.Init(this);
             InitializeComponent();
         }
 

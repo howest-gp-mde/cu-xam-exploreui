@@ -6,7 +6,6 @@ namespace XrnCourse.ExploreUI
     {
         public App()
         {
-            AdMaiora.RealXaml.Client.AppManager.Init(this);
             InitializeComponent();
             MainPage = new MainPage();
         }
