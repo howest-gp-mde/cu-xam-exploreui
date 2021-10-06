@@ -15,12 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="MasterDetailViews\ExampleDetailPage.xaml.cs">
-      <DependentUpon>ExampleDetailPage.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
+    <EmbeddedResource Update="FlyoutExamplePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="LayoutPages\AbsoluteLayoutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -42,13 +39,7 @@
     <EmbeddedResource Update="LayoutTypesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MasterDetailExamplePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MasterDetailViews\ExampleMasterPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MasterDetailViews\ExampleDetailPage.xaml">
+    <EmbeddedResource Update="Flyout\MainFlyout.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="PageTypesPage.xaml">
@@ -87,16 +78,13 @@
     <None Update="LayoutTypesPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="MainFlyout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="MasterDetailExamplePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-    <None Update="MasterDetailViews\ExampleDetailPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
-    <None Update="MasterDetailViews\ExampleMasterPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="PageTypesPage.xaml">

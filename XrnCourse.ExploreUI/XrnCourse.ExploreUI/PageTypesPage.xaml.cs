@@ -27,15 +27,5 @@ Just click one of the buttons below and watch it happen.",
             await Navigation.PushAsync(new TabsExamplePage());
         }
 
-        private async void BtnMasterDetailPage_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MasterDetailExamplePage());
-        }
-
-        private async void BtnGoBack_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PopModalAsync();
-        }
-
     }
 }

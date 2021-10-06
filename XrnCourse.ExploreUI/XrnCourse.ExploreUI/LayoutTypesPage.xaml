@@ -18,13 +18,6 @@
                 <Button Style="{StaticResource DefaultButtonStyle}" Text="RelativeLayout" Clicked="BtnRelativeLayout_Clicked"></Button>
                 <Button Style="{StaticResource DefaultButtonStyle}" Text="FlexLayout" Clicked="BtnFlexLayout_Clicked"></Button>
                 <Button Style="{StaticResource DefaultButtonStyle}" Text="Frames" Clicked="BtnFrames_Clicked"></Button>
-                <Button Style="{StaticResource CancelButtonStyle}" Text=" &#12298; Go Back " Clicked="BtnGoBack_Clicked">
-                    <Button.Margin>
-                        <Thickness>
-                            <Thickness.Top>50</Thickness.Top> <!-- override Margin.Top of DefaultButtonStyle -->
-                        </Thickness>
-                    </Button.Margin>
-                </Button>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

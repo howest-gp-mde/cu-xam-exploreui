@@ -12,13 +12,6 @@
             <Label Style="{DynamicResource CustomTitleStyle}">Explore View Types</Label>
             <Label Style="{DynamicResource CaptionStyle}" Text="and learn to control the controls!"></Label>
             <Button Style="{StaticResource DefaultButtonStyle}" Text="Textual Views" Clicked="BtnTextualView_Clicked"></Button>
-            <Button Style="{StaticResource CancelButtonStyle}" Text=" &#12298; Go Back " Clicked="BtnGoBack_Clicked">
-                <Button.Margin>
-                    <Thickness>
-                        <Thickness.Top>50</Thickness.Top> <!-- override Margin.Top of DefaultButtonStyle -->
-                    </Thickness>
-                </Button.Margin>
-            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

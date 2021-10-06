@@ -15,7 +15,7 @@ namespace XrnCourse.ExploreUI
 
         private async void BtnGoBack_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopModalAsync();
+            await Navigation.PopAsync();
         }
 
         private async void BtnStackLayout_Clicked(object sender, EventArgs e)
