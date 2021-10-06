@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XrnCourse.ExploreUI.ModalExamplePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span>A modal page encourages users to complete</Span>
+                        <Span FontAttributes="Bold">&#160;</Span>
+                        <Span FontAttributes="Bold">a self-contained task</Span>
+                        <Span FontAttributes="Bold">&#160;</Span>
+                        <Span>that cannot be navigated away from until the task is completed or cancelled.</Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <StackLayout VerticalOptions="StartAndExpand" >
+                <Entry x:Name="TxtAge" Placeholder="Enter your age" x:FieldModifier="Public" />
+                <Button x:Name="BtnOk" Text="Dismiss" Clicked="BtnOk_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

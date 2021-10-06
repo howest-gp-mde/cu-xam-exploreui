@@ -13,7 +13,7 @@
             <Label Style="{DynamicResource CaptionStyle}" Text="...and how to navigate them!"></Label>
             <Button Style="{StaticResource DefaultButtonStyle}" Text="Navigation Page" Clicked="BtnNavigationPage_Clicked"></Button>
             <Button Style="{StaticResource DefaultButtonStyle}" Text="Tabbed Page" Clicked="BtnTabbedPage_Clicked"></Button>
-            <Button Style="{StaticResource DefaultButtonStyle}" Text="Carousel Page" ></Button>
+            <Button Style="{StaticResource DefaultButtonStyle}" Text="Modal Page" Clicked="BtnModalPage_Clicked" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
