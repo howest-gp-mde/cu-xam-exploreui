@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:local="clr-namespace:XrnCourse.ExploreUI"
-             mc:Ignorable="d"
-             x:Class="XrnCourse.ExploreUI.MainPage"
-             Style="{StaticResource PlatformPaddedContentPageStyle}">
+<FlyoutPage
+    x:Class="XrnCourse.ExploreUI.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:XrnCourse.ExploreUI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PlatformPaddedContentPageStyle}"
+    mc:Ignorable="d">
     <FlyoutPage.Flyout>
         <local:MainFlyout x:Name="mainFlyout" />
     </FlyoutPage.Flyout>
@@ -16,12 +17,5 @@
                 <local:PageTypesPage />
             </x:Arguments>
         </NavigationPage>
-        <!--<StackLayout HorizontalOptions="FillAndExpand" Spacing="10">
-            <Label Style="{DynamicResource CustomTitleStyle}">Explore UI</Label>
-            <Label Style="{DynamicResource CaptionStyle}" Text="...and learn kick-ass XAML along the way"></Label>
-            <Button Style="{StaticResource DefaultButtonStyle}" Text="Page Types" Clicked="BtnPageTypes_Clicked"></Button>
-            <Button Style="{StaticResource DefaultButtonStyle}" Text="Layouts" Clicked="BtnLayouts_Clicked"></Button>
-            <Button Style="{StaticResource DefaultButtonStyle}" Text="Views / Widgets" Clicked="BtnViews_Clicked"></Button>
-        </StackLayout>-->
     </FlyoutPage.Detail>
 </FlyoutPage>
